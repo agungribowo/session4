@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="">
+</head>
+
+<body>
+
+    <h1>Kalkulator </h1>
+    <h2>angka 1</h2>
+    <input type="text" id="angka1"> <br>
+    <h2>angka 2</h2>
+    <input type="text" id="angka2"> <br>
+    <h2>Hasil :</h2><h2 id="hasil"></h2>
+    <button id="tambah">tambah </button>
+    <button id="kurang">kurang </button>
+    <button id="kali">kali </button>
+    <button id="bagi">bagi </button>
+    <br>
+    <button id="1">1</button>
+    <button id="2">2</button>
+    <button id="3">3</button>
+    <br>
+    <button id="4">4</button>
+    <button id="5">5</button>
+    <button id="6">6</button>
+    <br>
+    <button id="7">7</button>
+    <button id="8">8</button>
+    <button id="9">9</button>
+    <br>
+    <a href="edit1.html">edit 1</a>
+    <a href="edit2.html">edit 2</a>
+
+    <script type="text/javascript">
+        function input1() {
+            Number(document.getElementById("1").value)
+            Number(document.getElementById("2").value)
+            Number(document.getElementById("3").value)
+            Number(document.getElementById("4").value)
+            Number(document.getElementById("5").value)
+            Number(document.getElementById("6").value)
+            Number(document.getElementById("7").value)
+            Number(document.getElementById("8").value)
+            Number(document.getElementById("9").value)
+            Number(document.getElementById("0").value)
+        }
+        document.getElementById("angka1").onclick = input1
+
+        function angka2() {
+            Number(document.getElementById("angka2").value)
+        }
+
+        function jumlah() {            
+            document.getElementById("hasil").textContent = (angka1 + angka2)
+        }
+        document.getElementById("tambah").onclick = jumlah
+
+        function kurang() {            
+            document.getElementById("hasil").textContent = (angka1 - angka2)
+        }
+        document.getElementById("kurang").onclick = kurang
+
+        function kali() {           
+            document.getElementById("hasil").textContent = (angka1 * angka2)
+        }
+        document.getElementById("kali").onclick = kali
+
+        function bagi() {            
+            document.getElementById("hasil").textContent = (angka1 / angka2)
+        }
+        document.getElementById("bagi").onclick = bagi
+    </script>
+</body>
+
+</html>

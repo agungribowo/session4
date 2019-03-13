@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    
+    <h1>Kalkulator </h1>
+    <h2>angka 1</h2>
+    <input type="text" id="angka1"> <br>
+    <h2>angka 2</h2>
+    <input type="text" id="angka2"> <br>
+    <h2>Hasil :</h2><h2 id="hasil"></h2>
+    <button id="tambah">tambah </button>
+    <button id="kurang">kurang </button>
+    <button id="kali">kali </button>
+    <button id="bagi">bagi </button>
+
+    <a href="edit1.html">edit 1</a>
+    <a href="edit2.html">edit 2</a>
+
+    <script type="text/javascript">     
+        
+        function jumlah() {
+            var angka1 = Number(document.getElementById("angka1").value)
+            var angka2 = Number(document.getElementById("angka2").value)
+            document.getElementById("hasil").textContent=(angka1 + angka2)
+        }        
+            document.getElementById("tambah").onclick = jumlah
+
+        function kurang() {
+        var angka1 = Number(document.getElementById("angka1").value)
+        var angka2 = Number(document.getElementById("angka2").value)
+        document.getElementById("hasil").textContent=(angka1 - angka2)
+        }
+        document.getElementById("kurang").onclick = kurang
+        
+        function kali() {
+        var angka1 = Number(document.getElementById("angka1").value)
+        var angka2 = Number(document.getElementById("angka2").value)
+        document.getElementById("hasil").textContent=(angka1 * angka2)
+        }
+        document.getElementById("kali").onclick = kali
+
+        function bagi() {
+        var angka1 = Number(document.getElementById("angka1").value)
+        var angka2 = Number(document.getElementById("angka2").value)
+        document.getElementById("hasil").textContent=(angka1 / angka2)
+        }
+        document.getElementById("bagi").onclick = bagi
+    </script>
+</body>
+</html>

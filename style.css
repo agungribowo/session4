@@ -1,0 +1,13 @@
+body {
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-img {
+    height: 400px;
+    border-radius: 5px;
+}
